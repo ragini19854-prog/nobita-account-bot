@@ -1,13 +1,7 @@
-FROM python:3.10-slim-buster
+FROM python:3.10-slim-bookworm
 
 # Set working directory
 WORKDIR /app
-
-# Update and install dependencies
-RUN apt-get update && apt-get install -y \
-    gcc \
-    libsqlite3-dev \
-    && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements and install python packages
 COPY requirements.txt .
