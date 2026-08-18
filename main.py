@@ -41,6 +41,9 @@ async def main():
     async def debug_cb(event):
         logger.debug("Callback data: %s", event.data)
 
+    me = await bot.get_me()
+    username = f"@{me.username}" if me.username else f"(no username, id={me.id})"
+    logger.info("BOT STARTED: %s", username)
     logger.info("Telegram bot connected and handlers registered")
     await bot.run_until_disconnected()
 
