@@ -1,0 +1,11 @@
+.git
+.github
+attached_assets
+assets/Nobita
+plugins/Nobita
+utils/Nobita
+*.pyc
+__pycache__/
+*.session-journal
+.env
+venv/
