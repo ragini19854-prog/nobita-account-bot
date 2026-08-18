@@ -46,7 +46,7 @@ CHECK_CHANNELS=-1003320947065,-1004327531651,-1004401282563
 JOIN_URLS=https://t.me/NOBITA_SUPP0RT,https://t.me/OTP_PROVIDER_SUPPORT01,https://t.me/OTP_PROVIDER_SUPPORT02
 
 # Payment Credentials
-CWALLET_ID=98833049
+CWALLET_ID=147831922
 UPI_ID=abhaysinghchauhan01@ybl
 ```
 
@@ -56,7 +56,7 @@ UPI_ID=abhaysinghchauhan01@ybl
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/ragini19854-prog/number_purchase_bot]
+git clone [https://github.com/iamnobita09/Account_seller_bot]
 cd Numbott
 ```
 
