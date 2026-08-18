@@ -1,30 +1,55 @@
-import os
 import asyncio
 import logging
-from telethon import TelegramClient
-from config import BOT_TOKEN, API_ID, API_HASH, bot
+import os
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+from config import API_HASH, API_ID, BOT_TOKEN, bot
+
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    level=logging.INFO,
+)
 logger = logging.getLogger(__name__)
 
-os.makedirs("sessions", exist_ok=True)
 
-# Import plugins AFTER bot is created so they can use it or register handlers
-from plugins import register_all_handlers
+def validate_environment():
+    missing = []
+    if not API_ID:
+        missing.append("API_ID")
+    if not API_HASH:
+        missing.append("API_HASH")
+    if not BOT_TOKEN:
+        missing.append("BOT_TOKEN")
+    if missing:
+        raise RuntimeError(
+            "Missing Railway variable(s): " + ", ".join(missing)
+            + ". Add them under the service's Variables tab."
+        )
+
 
 async def main():
-    print("✅ Numbott Modular (Telethon) STARTED SUCCESSFULLY")
-    await bot.run_until_disconnected()
+    validate_environment()
+    os.makedirs("sessions", exist_ok=True)
 
-if __name__ == '__main__':
-    bot.start(bot_token=BOT_TOKEN)
+    # Import plugins only after the client exists so their handlers can register safely.
+    from plugins import register_all_handlers
+    from telethon import events
+
+    await bot.start(bot_token=BOT_TOKEN)
     register_all_handlers(bot)
 
-    from telethon import events
     @bot.on(events.CallbackQuery)
-    async def debug_cb(e):
-        logger.warning(f"CALLBACK DATA: {e.data}")
+    async def debug_cb(event):
+        logger.debug("Callback data: %s", event.data)
 
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    logger.info("Telegram bot connected and handlers registered")
+    await bot.run_until_disconnected()
 
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        logger.info("Bot stopped")
+    except Exception:
+        logger.exception("Bot failed during startup or runtime")
+        raise
