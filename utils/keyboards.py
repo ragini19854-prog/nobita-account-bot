@@ -45,7 +45,7 @@ def get_persistent_menu(uid):
 
 def get_support_buttons():
     buttons = [
-        [Button.url("📩 Support", get_support_url())],
+    [Button.url("📩 Support", "https://t.me/+qggegK_cG_FmNjJl")],
     ]
     if TERMS_URL and TERMS_URL.startswith("http"):
         buttons.append([Button.url("📜 Terms & Conditions", TERMS_URL)])
