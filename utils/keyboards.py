@@ -6,6 +6,9 @@ from database import is_admin, get_support_url
 # We use bg_primary (blue), bg_success (green), bg_danger (red)
 # For icon, we pass the custom emoji ID (int)
 
+SUPPORT_URL = "https://t.me/+qggegK_cG_FmNjJl"
+
+
 def style_btn(text, data, style_type=None, icon=None):
     return Button.inline(text, data, style=style_type, icon=icon)
 
@@ -45,7 +48,7 @@ def get_persistent_menu(uid):
 
 def get_support_buttons():
     buttons = [
-    [Button.url("📩 Support", "https://t.me/+qggegK_cG_FmNjJl")],
+        [Button.url("📩 Contact Support", SUPPORT_URL)],
     ]
     if TERMS_URL and TERMS_URL.startswith("http"):
         buttons.append([Button.url("📜 Terms & Conditions", TERMS_URL)])
