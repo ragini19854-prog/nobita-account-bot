@@ -19,7 +19,7 @@ async def send_main_menu(bot, event, uid):
            f"<blockquote>{P_GIFT} <b>𝐑ᴇғᴇʀ & 𝐄ᴀʀɴ:</b>\n𝐈ɴᴠɪᴛᴇ ғʀɪᴇɴᴅs ᴀɴᴅ ᴇᴀʀɴ {pct}% ᴏғ ᴛʜᴇɪʀ ᴅᴇᴘᴏsɪᴛs!\n"
            f"{P_GLOBE} <code>https://t.me/{bot_username}?start=ref_{uid}</code></blockquote>\n\n"
            f"<blockquote>💰 <b>𝐁ᴀʟᴀɴᴄᴇ:</b> {P_INR}{bal}</blockquote>\n\n"
-           f"<blockquote>👨‍💻 <b>𝐃ᴇᴠᴇʟᴏᴘᴇʀ:</b> <a href='https://t.me/II_NOBITA_DEFAULTERS_II'>𝚴 𝐎 𝐁 𝚰 𝐓 𝚲</a></blockquote>")
+           f"<blockquote>👨‍💻 <b>𝐃ᴇᴠᴇʟᴏᴘᴇʀ:</b> <a href='https://t.me/Demon_x_coder_aura'>༺⚡︎ 𝓜𝓐𝓓𝓐𝓡𝓐 ⚡︎༻</a></blockquote>")
     
     f = await bot.upload_file(PFP_URL)
     media = types.InputMediaUploadedPhoto(file=f)
