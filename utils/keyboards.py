@@ -6,7 +6,7 @@ from database import is_admin, get_support_url
 # We use bg_primary (blue), bg_success (green), bg_danger (red)
 # For icon, we pass the custom emoji ID (int)
 
-SUPPORT_URL = "https://t.me/+qggegK_cG_FmNjJl"
+SUPPORT_URL = "https://t.me/+rch2KH1HNnpiZjg1"
 
 
 def style_btn(text, data, style_type=None, icon=None):
