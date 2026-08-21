@@ -17,7 +17,7 @@ files = [
 replacements = {
     '/home/ubuntu/Numbott_Telethon/plugins/start.py': [
         ('msg = (f"{PE_HEART}', 'msg = (f"<blockquote>{PE_HEART}'),
-        ('👨‍💻 <b>𝐃ᴇᴠᴇʟᴏᴘᴇʀ:</b> @II_NOBITA_DEFAULTERS_II")', '👨‍💻 <b>𝐃ᴇᴠᴇʟᴏᴘᴇʀ:</b> @II_NOBITA_DEFAULTERS_II</blockquote>")'),
+        ('👨‍💻 <b>𝐃ᴇᴠᴇʟᴏᴘᴇʀ:</b> @Demon_x_coder_aura")', '👨‍💻 <b>𝐃ᴇᴠᴇʟᴏᴘᴇʀ:</b> @Demon_x_coder_aura</blockquote>")'),
         ('msg = f"{PE_FLOWER}', 'msg = f"<blockquote>{PE_FLOWER}'),
         ('Verify Joined</b>."', 'Verify Joined</b>.</blockquote>"'),
         ('before using the bot."', 'before using the bot.</blockquote>"')
