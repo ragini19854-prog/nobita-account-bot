@@ -41,7 +41,15 @@ async def get_unjoined_channels(bot, uid):
         except UserNotParticipantError:
             if i < len(JOIN_URLS):
                 unjoined.append((JOIN_URLS[i], i + 1))
-        except Exception:
+        except ChatAdminRequiredError:
+            # Bot lost admin / never had it in this channel — real error, not "unjoined"
+            logger.error(f"Bot is not admin in channel: {ch}")
+            if i < len(JOIN_URLS):
+                unjoined.append((JOIN_URLS[i], i + 1))
+        except Exception as e:
+            # Previously this branch swallowed ANY error silently and treated it
+            # identically to "not joined" — no trace in logs. Now it's logged.
+            logger.error(f"Channel Check Error for {ch} (uid={uid}): {type(e).__name__}: {e}")
             if i < len(JOIN_URLS):
                 unjoined.append((JOIN_URLS[i], i + 1))
     return unjoined
