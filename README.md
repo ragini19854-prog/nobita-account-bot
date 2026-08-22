@@ -56,7 +56,7 @@ UPI_ID=vinit-shubh412@fam
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/ragini19854-prog/number_purchase_bot]
+git clone [https://github.com/ragini19854-prog/nobita-account-bot]
 cd Numbott
 ```
 
