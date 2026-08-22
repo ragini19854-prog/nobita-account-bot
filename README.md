@@ -6,12 +6,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00F0FF&center=true&vCenter=true&width=500&lines=Advanced+Telegram+Account+Shop+Bot;Modular+%2B+Asynchronous+%2B+Telethon;Custom+UI+%2B+Dynamic+Must-Join" alt="Typing SVG" />
 </p>
 
-<h3 align="center">
-    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
-</h3>
-
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/iamnobita09/Account_seller_bot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="520" height="138.45"/></a></p>
-
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Telethon](https://img.shields.io/badge/Telethon-Async-success?style=for-the-badge&logo=telegram&logoColor=white)](https://github.com/LonamiWebs/Telethon)
 [![SQLite](https://img.shields.io/badge/Database-SQLite-orange?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
@@ -41,19 +35,19 @@ Create a `.env` file in the root directory and add the following keys:
 API_ID=32208414
 API_HASH=628f11c05a44c8dda4b006e66f4bf7df
 BOT_TOKEN=your_bot_token_here
-ADMIN_ID=1106006604
+ADMIN_ID=5298773697
 
 # Logging Channels
-LOG_CHANNEL_ID=-1004327531651
-LOG_CHANNEL_ID_2=-1004401282563
+LOG_CHANNEL_ID=-1004452478102
+LOG_CHANNEL_ID_2=-100387593353
 
 # Must Join Verification Setup
-CHECK_CHANNELS=-1003320947065,-1004327531651,-1004401282563
-JOIN_URLS=https://t.me/NOBITA_SUPP0RT,https://t.me/OTP_PROVIDER_SUPPORT01,https://t.me/OTP_PROVIDER_SUPPORT02
+CHECK_CHANNELS=-1003964347575,-1004481651864,-1003875933534
+JOIN_URLS=https://t.me/I_VIP_RADHE_II,https://t.me/,https://t.me/
 
 # Payment Credentials
-CWALLET_ID=147831922
-UPI_ID=abhaysinghchauhan01@ybl
+CWALLET_ID=98833049
+UPI_ID=vinit-shubh412@fam
 ```
 
 ---
@@ -62,7 +56,7 @@ UPI_ID=abhaysinghchauhan01@ybl
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/iamnobita09/Account_seller_bot]
+git clone [https://github.com/ragini19854-prog/number_purchase_bot]
 cd Numbott
 ```
 
@@ -97,6 +91,6 @@ python main.py
 
 <div align="center">
 
-Developed with ❤️ by **[𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II)**
+Developed with ❤️ by **[𝐃𝐞𝐦𝐨𝐧](https://t.me/Demon_x_coder_aura)**
 
 </div>
